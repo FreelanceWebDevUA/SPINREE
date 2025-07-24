@@ -1,675 +1,546 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="preload"
-      href="./assets/fonts/Gotham-Medium.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="./assets/fonts/Gotham-Book.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="./assets/fonts/Gotham-Bold.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="./assets/fonts/Gotham-Black.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="./assets/fonts/Gilroy-Regular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
-    <title>SPINREE</title>
-    <script type="module" crossorigin="" src="./js/index.min.js"></script>
-    <link rel="stylesheet" crossorigin="" href="./css/index.min.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <header data-fls-header="" class="header">
-        <div class="header__blok-top blok-top">
-          <div class="blok-top">
-            <picture>
-              <img alt="icon" src="./assets/img/icon/Download.webp" />
-            </picture>
-            <div class="blok-top__text">
-              <p>Download the definitive Guide to Platform Selection</p>
-            </div>
-            <a href="#" class="button-top">Download White Paper</a>
-          </div>
-        </div>
-        <a href="#" class="top-mobile header__blok-top">
-          <picture>
-            <img alt="icon" src="./assets/img/icon/Download.webp" />
-          </picture>
-          <div href="#" class="button-top">Download Guide to Platform</div>
-        </a>
-        <div class="header__bg-color">
-          <div class="header__container">
-            <!-- <include src="@components/layout/menu/menu.html" locals='{"active":"Home"}'></include> -->
-            <div class="header__block block-header">
-              <div class="block-header__logo">
-                <a href="" class="header__logo">
-                  <img src="./assets/img/icon/logo-icon.svg" alt="icon-logo" />
-                  <span>SPIN</span>
-                  REE
-                </a>
-              </div>
-              <div class="header__menu menu">
-                <button
-                  type="button"
-                  data-fls-menu=""
-                  class="menu__icon icon-menu"
-                >
-                  <span></span>
-                </button>
-                <nav class="menu__body">
-                  <ul class="menu__list">
-                    <li class="menu__item">
-                      <a href="" class="menu__link">About us</a>
-                    </li>
-                    <li class="menu__item">
-                      <a href="" class="menu__link">
-                        Solutions
-                        <span class="menu__plus">+</span>
-                      </a>
-                      <ul class="menu__nesting-list nesting-list">
-                        <ul class="nesting-list-style">
-                          <li class="style-block">
-                            <a href="" class="menu__nesting-link link-style"
-                              >In-House</a
-                            >
-                            <ul>
-                              <li>
-                                <a href="" class="menu__nesting-link"
-                                  >Platform</a
-                                >
-                              </li>
-                              <li>
-                                <a href="" class="menu__nesting-link">Crm</a>
-                              </li>
-                              <li>
-                                <a href="" class="menu__nesting-link"
-                                  >retention module</a
-                                >
-                              </li>
-                            </ul>
-                          </li>
-                          <li class="style-block">
-                            <a href="" class="menu__nesting-link link-style"
-                              >Games</a
-                            >
-                            <ul>
-                              <li>
-                                <a href="" class="menu__nesting-link">casino</a>
-                              </li>
-                              <li>
-                                <a href="" class="menu__nesting-link"
-                                  >sportsbook</a
-                                >
-                              </li>
-                              <li>
-                                <a href="" class="menu__nesting-link"
-                                  >virtual sports</a
-                                >
-                              </li>
-                            </ul>
-                          </li>
-                          <li class="style-block">
-                            <a href="" class="menu__nesting-link link-style"
-                              >Backend</a
-                            >
-                            <ul>
-                              <li>
-                                <a href="" class="menu__nesting-link"
-                                  >configuration</a
-                                >
-                              </li>
-                              <li>
-                                <a href="" class="menu__nesting-link"
-                                  >analytics</a
-                                >
-                              </li>
-                              <li>
-                                <a href="" class="menu__nesting-link"
-                                  >management</a
-                                >
-                              </li>
-                            </ul>
-                          </li>
-                          <li class="style-block">
-                            <a href="" class="menu__nesting-link link-style"
-                              >Additional</a
-                            >
-                            <ul>
-                              <li>
-                                <a href="" class="menu__nesting-link"
-                                  >game aggregation</a
-                                >
-                              </li>
-                              <li>
-                                <a href="" class="menu__nesting-link"
-                                  >tech support & updates</a
-                                >
-                              </li>
-                              <li>
-                                <a href="" class="menu__nesting-link"
-                                  >blockchain & web 3.0</a
-                                >
-                              </li>
-                              <li>
-                                <a href="" class="menu__nesting-link"
-                                  >crypto payment systems</a
-                                >
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </ul>
-                    </li>
-                    <li class="menu__item">
-                      <a href="" class="menu__link">Benefits</a>
-                    </li>
-                    <li class="menu__item">
-                      <a href="" class="menu__link">NEWS & EVENTS</a>
-                    </li>
-                    <li class="menu__item">
-                      <a href="" class="menu__link">contacts</a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-              <a
-                data-fls-dynamic=".menu__list, 991.98"
-                href="#"
-                class="block-header-button"
-              >
-                <div class="block-header-button__text">
-                  <span>JOIN US</span>
-                  <span class="--icon-Right-Arrow-4"></span>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </header>
-      <main class="page page--home">
-        <section class="page--hero hero">
-          <div class="border-color"></div>
-          <div class="hero__block block-hero">
-            <div class="block-hero__items">
-              <div class="block-hero__item">
-                <h1>
-                  TECH THAT PERFORMS,
-                  <br />
-                  <span>PARTNERSHIPS</span>
-                  THAT WIN!
-                </h1>
-              </div>
-              <div class="block-hero__item">
-                <p>
-                  ALL-IN-ONE AND WHITE-LABEL ONLINE CASINO SOLUTIONS —
-                  PARTNERING FOR SUCCESS!
-                </p>
-              </div>
-              <div class="block-hero__cubs-mob">
-                <img src="./assets/img/cubs-mob.svg" alt="" />
-              </div>
-              <div class="block-hero__item">
-                <a href="#" class="block-hero__bubutton-img --icon-arrow"></a>
-                <a href="#" class="block-hero__bubutton-def">send a request</a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="get-your">
-          <div class="get-your__block">
-            <div class="get-your__items">
-              <div class="get-your__item item-btn">
-                <a href="#" class="get-your__button">
-                  <div class="get-your__img-btn --icon-button-on"></div>
-                </a>
-              </div>
-              <div class="get-your__item item-text">
-                <h2>
-                  Get your Online Casino, Live in
-                  <span>3-5 Weeks!</span>
-                </h2>
-                <p>
-                  SpinRee is more than just a platform — it's a comprehensive
-                  solution tailored to meet the full spectrum of iGaming
-                  business needs.
-                </p>
-              </div>
-              <div class="get-your__item item-team">
-                <div class="item-team-color">
-                  <div class="item-team__block">
-                    <div class="item-team__items">
-                      <div class="item-team__title">
-                        YOUR GO-TO IGAMING TEAM
-                      </div>
-                      <div class="item-team__text">
-                        From start to finish, we handle absolutely EVERYTHING.
-                      </div>
-                    </div>
-                    <a href="#" class="item-team__button">
-                      <span>about us</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="get-your__interface interface">
-                <h3 class="interface__title">
-                  Creating an inviting
-                  <span>interface</span>
-                </h3>
-                <p>
-                  Games and Games Aggregation, Payments, CRM, Whitelabel and
-                  Turnkey Solutions, Blockchain & Web 3.0 Development.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="spinree-core">
-          <div class="border-color-2"></div>
-          <div class="spinree-core__block block-spinree">
-            <div class="block-spinree__items">
-              <div class="block-spinree__item item-block">
-                <div class="item-block__title">Payments</div>
-                <div class="item-block__images">
-                  <picture>
-                    <img
-                      alt="mastercard"
-                      src="./assets/img/spinree-core/mastercard.webp"
-                    />
-                  </picture>
-                  <picture>
-                    <img alt="visa" src="./assets/img/spinree-core/visa.webp" />
-                  </picture>
-                  <picture>
-                    <img alt="upi" src="./assets/img/spinree-core/upi.webp" />
-                  </picture>
-                  <picture>
-                    <img alt="pix" src="./assets/img/spinree-core/pix.webp" />
-                  </picture>
-                </div>
-                <div class="item-block__text">and more</div>
-              </div>
-              <div class="block-spinree__item item-block">
-                <div class="item-block__title">Games</div>
-                <div class="item-block__sutitle">+10,000 games</div>
-                <div class="item-block__subtext">
-                  Sportsbook & Virtual Sports
-                </div>
-                <div class="item-block__subimages">
-                  <picture>
-                    <img
-                      alt="mastercard"
-                      src="./assets/img/spinree-core/1.webp"
-                    />
-                  </picture>
-                  <picture>
-                    <img alt="visa" src="./assets/img/spinree-core/4.webp" />
-                  </picture>
-                  <picture>
-                    <img alt="upi" src="./assets/img/spinree-core/3.webp" />
-                  </picture>
-                  <picture>
-                    <img alt="pix" src="./assets/img/spinree-core/2.webp" />
-                  </picture>
-                </div>
-              </div>
-            </div>
-            <div class="block-spinree__items displey-non">
-              <div class="block-spinree block-spinree__item--specific">
-                <div class="block-spinree--decor">
-                  <div class="block-spinree__title">
-                    Spinree
-                    <span class="block-spinree__title-accent">core</span>
-                  </div>
-                </div>
-                <div class="block-spinree__content">
-                  <div class="block-spinree__images">
-                    <picture>
-                      <img
-                        alt=""
-                        src="./assets/img/spinree-core/fraction.webp"
-                      />
-                    </picture>
-                  </div>
-                  <div class="block-spinree__text">
-                    Segmentation
-                    <span>Real-time</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="block-spinree__items">
-              <div class="block-spinree__item item-block">
-                <div class="item-block__title">CRM</div>
-                <div class="item-block__sub-items">
-                  <div class="item-block__sub-text">Bonuses</div>
-                  <div class="item-block__sub-text">Tournaments</div>
-                  <div class="item-block__sub-text">Communication</div>
-                </div>
-              </div>
-              <div class="block-spinree__item item-block">
-                <div class="item-block__title">Backoffice</div>
-                <div class="item-block__sub-items">
-                  <div class="item-block__sub-text">Configuration</div>
-                  <div class="item-block__sub-text">Analytics</div>
-                  <div class="item-block__sub-text">Managment</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="choose-us container-980">
-          <div class="choose-us__title">
-            <h3>Why choose us?</h3>
-          </div>
-          <div class="choose-us__block">
-            <div class="choose-us__items">
-              <div class="choose-us__item">
-                <span>INNOVATION</span>
-              </div>
-              <div class="choose-us__item">
-                <span>RELIABILITY</span>
-              </div>
-            </div>
-            <div class="choose-us__items">
-              <div class="choose-us__item">
-                <span>SCAPABILITY</span>
-              </div>
-              <div class="choose-us__item">
-                <span>HIGH PERFORMANCE</span>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="news">
-          <div class="news__block container-980">
-            <div class="news__title">
-              <h3>lates NEWS & EVENTS</h3>
-              <span>Book the meeting with us</span>
-            </div>
-            <div class="news__items">
-              <!-- Оболонка слайдера -->
-              <div class="news swiper displey-non-slid" data-fls-slider="">
-                <!-- Частина слайдера, що рухається -->
-                <div class="news__wrapper swiper-wrapper">
-                  <!-- Слайд -->
-                  <div class="news__slide swiper-slide">
-                    <div class="news-item">
-                      <div class="news-item__img">
-                        <picture>
-                          <img alt="news" src="./assets/img/news/news-1.webp" />
-                        </picture>
-                      </div>
-                      <div class="news-item__title">
-                        <p>igb live</p>
-                        <p>london</p>
-                      </div>
-                      <div class="news-item__data">July 1-4, 2025</div>
-                      <a href="#" class="news-item__subtitle"
-                        >book the meeting</a
-                      >
-                    </div>
-                    <div class="news-item">
-                      <div class="news-item__img">
-                        <picture>
-                          <img alt="news" src="./assets/img/news/news-2.webp" />
-                        </picture>
-                      </div>
-                      <div class="news-item__title">SiGMA Euro-Med Malta</div>
-                      <div class="news-item__data">September 1-4, 2025</div>
-                      <a href="#" class="news-item__subtitle"
-                        >book the meeting</a
-                      >
-                    </div>
-                    <div class="news-item">
-                      <div class="news-item__img">
-                        <picture>
-                          <img alt="news" src="./assets/img/news/news-3.webp" />
-                        </picture>
-                      </div>
-                      <div class="news-item__title">affiliate world europe</div>
-                      <div class="news-item__data">September 4-5, 2025</div>
-                      <a href="#" class="news-item__subtitle"
-                        >book the meeting</a
-                      >
-                    </div>
-                  </div>
-                  <div class="news__slide swiper-slide">
-                    <div class="news-item">
-                      <div class="news-item__img">
-                        <picture>
-                          <img alt="news" src="./assets/img/news/news-1.webp" />
-                        </picture>
-                      </div>
-                      <div class="news-item__title">
-                        <p>igb live</p>
-                        <p>london</p>
-                      </div>
-                      <div class="news-item__data">July 1-4, 2025</div>
-                      <a href="#" class="news-item__subtitle"
-                        >book the meeting</a
-                      >
-                    </div>
-                    <div class="news-item">
-                      <div class="news-item__img">
-                        <picture>
-                          <img alt="news" src="./assets/img/news/news-2.webp" />
-                        </picture>
-                      </div>
-                      <div class="news-item__title">SiGMA Euro-Med Malta</div>
-                      <div class="news-item__data">September 1-4, 2025</div>
-                      <a href="#" class="news-item__subtitle"
-                        >book the meeting</a
-                      >
-                    </div>
-                    <div class="news-item">
-                      <div class="news-item__img">
-                        <picture>
-                          <img alt="news" src="./assets/img/news/news-3.webp" />
-                        </picture>
-                      </div>
-                      <div class="news-item__title">affiliate world europe</div>
-                      <div class="news-item__data">September 4-5, 2025</div>
-                      <a href="#" class="news-item__subtitle"
-                        >book the meeting</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <!-- Якщо потрібна пагінація -->
-                <div class="swiper-pagination"></div>
-              </div>
-              <!-- Оболонка слайдера -->
-              <div class="news swiper displey-on-mob" data-fls-slider="">
-                <!-- Частина слайдера, що рухається -->
-                <div class="news__wrapper swiper-wrapper">
-                  <!-- Слайд -->
-                  <div class="news__slide swiper-slide">
-                    <div class="news-item">
-                      <div class="news-item__img">
-                        <picture>
-                          <img alt="news" src="./assets/img/news/news-1.webp" />
-                        </picture>
-                      </div>
-                      <div class="news-item__title">
-                        <p>igb live</p>
-                        <p>london</p>
-                      </div>
-                      <div class="news-item__data">July 1-4, 2025</div>
-                      <a href="#" class="news-item__subtitle"
-                        >book the meeting</a
-                      >
-                    </div>
-                  </div>
-                  <div class="news__slide swiper-slide">
-                    <div class="news-item">
-                      <div class="news-item__img">
-                        <picture>
-                          <img alt="news" src="./assets/img/news/news-2.webp" />
-                        </picture>
-                      </div>
-                      <div class="news-item__title">SiGMA Euro-Med Malta</div>
-                      <div class="news-item__data">September 1-4, 2025</div>
-                      <a href="#" class="news-item__subtitle"
-                        >book the meeting</a
-                      >
-                    </div>
-                  </div>
-                  <div class="news__slide swiper-slide">
-                    <div class="news-item">
-                      <div class="news-item__img">
-                        <picture>
-                          <img alt="news" src="./assets/img/news/news-3.webp" />
-                        </picture>
-                      </div>
-                      <div class="news-item__title">affiliate world europe</div>
-                      <div class="news-item__data">September 4-5, 2025</div>
-                      <a href="#" class="news-item__subtitle"
-                        >book the meeting</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <!-- Якщо потрібна пагінація -->
-                <div class="swiper-pagination"></div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="solution">
-          <div class="border-color-3"></div>
-          <div class="solution__block container-980">
-            <div class="solution__title">
-              <h3>
-                LET'S FIND
-                <br />
-                <span>THE BEST</span>
-                SOLUTION FOR YOU
-              </h3>
-              <p>
-                Contact us anytime — we handle each partnership individually.
-              </p>
-            </div>
-            <div class="solution__items">
-              <div class="solution__item">
-                <form action="files/sendmail/sendmail.php" method="POST">
-                  <div class="input-wrapper">
-                    <input
-                      type="text"
-                      name="name"
-                      data-error="Error"
-                      placeholder="Name"
-                      class="input"
-                    />
-                  </div>
-                  <div class="input-wrapper">
-                    <input
-                      type="text"
-                      name="form[email]"
-                      data-error="Error"
-                      placeholder="E-mail"
-                      class="input"
-                    />
-                  </div>
-                  <div class="input-wrapper">
-                    <input
-                      type="message"
-                      name="message"
-                      data-error="Error"
-                      placeholder="message"
-                      class="input"
-                    />
-                  </div>
-                  <div class="cubcheckbox">
-                    <input
-                      id="c_1"
-                      data-error="Помилка"
-                      class="checkbox__input"
-                      type="checkbox"
-                      value="1"
-                      name="form[]"
-                    />
-                    <label for="c_1" class="checkbox__label">
-                      <span class="checkbox__text">
-                        I understand that my personal data will be processed in
-                        accordance with the PikeBit
-                      </span>
-                    </label>
-                  </div>
-                  <div class="cubcheckbox__button">
-                    <button type="submit" class="button">submit request</button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-      <footer data-fls-footer="" class="footer">
-        <div class="footer container-980">
-          <div class="footer__block">
-            <div class="footer__menu menu-footer">
-              <div class="menu-footer__items">
-                <div class="menu-footer__item">
-                  <ul>
-                    <li>
-                      <a href="#">About us</a>
-                    </li>
-                    <li>
-                      <a href="#">Solutions</a>
-                    </li>
-                    <li>
-                      <a href="#">Benefits</a>
-                    </li>
-                    <li>
-                      <a href="#">NEWS & EVENTS</a>
-                    </li>
-                    <li>
-                      <a href="#">contacts</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="menu-footer__icon">
-                  <a href="#" class="menu-footer__link --icon-facebook"></a>
-                  <a href="#" class="menu-footer__link --icon-instagram"></a>
-                  <a href="#" class="menu-footer__link --icon-telegram"></a>
-                  <a href="#" class="menu-footer__link --icon-linkedin"></a>
-                  <a href="#" class="menu-footer__link --icon-whatsapp"></a>
-                </div>
-              </div>
-              <div class="menu-footer__politic">
-                <a href="#">Copyright © 2025 Spinree.com</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </div>
-  </body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preload" href="./assets/fonts/Gotham-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Gotham-Book.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Gotham-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Gotham-Black.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Gilroy-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>SPINREE</title>
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1753353269957"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1753353269957">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" class="header">
+				<div class="header__blok-top blok-top">
+					<div class="blok-top">
+						<picture>
+							<img alt="icon" src="./assets/img/icon/Download.webp">
+						</picture>
+						<div class="blok-top__text">
+							<p>Download the definitive Guide to Platform Selection</p>
+						</div>
+						<a href="#" class="button-top">Download White Paper</a>
+					</div>
+				</div>
+				<a href="#" class="top-mobile header__blok-top">
+					<picture>
+						<img alt="icon" src="./assets/img/icon/Download.webp">
+					</picture>
+					<div href="#" class="button-top">Download Guide to Platform</div>
+				</a>
+				<div class="header__bg-color">
+					<div class="header__container">
+						<!-- <include src="@components/layout/menu/menu.html" locals='{"active":"Home"}'></include> -->
+						<div class="header__block block-header">
+							<div class="block-header__logo">
+								<a href="" class="header__logo">
+									<img src="./assets/img/icon/logo-icon.svg" alt="icon-logo">
+									<span>SPIN</span>
+									REE
+								</a>
+							</div>
+							<div class="header__menu menu">
+								<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+									<span></span>
+								</button>
+								<nav class="menu__body">
+									<ul class="menu__list">
+										<li class="menu__item">
+											<a href="" class="menu__link">About us</a>
+										</li>
+										<li class="menu__item">
+											<a href="" class="menu__link">
+												Solutions
+												<span class="menu__plus">+</span>
+											</a>
+											<ul class="menu__nesting-list nesting-list">
+												<ul class="nesting-list-style">
+													<li class="style-block">
+														<a href="" class="menu__nesting-link link-style">In-House</a>
+														<ul>
+															<li>
+																<a href="" class="menu__nesting-link">Platform</a>
+															</li>
+															<li>
+																<a href="" class="menu__nesting-link">Crm</a>
+															</li>
+															<li>
+																<a href="" class="menu__nesting-link">retention module</a>
+															</li>
+														</ul>
+													</li>
+													<li class="style-block">
+														<a href="" class="menu__nesting-link link-style">Games</a>
+														<ul>
+															<li>
+																<a href="" class="menu__nesting-link">casino</a>
+															</li>
+															<li>
+																<a href="" class="menu__nesting-link">sportsbook</a>
+															</li>
+															<li>
+																<a href="" class="menu__nesting-link">virtual sports</a>
+															</li>
+														</ul>
+													</li>
+													<li class="style-block">
+														<a href="" class="menu__nesting-link link-style">Backend</a>
+														<ul>
+															<li>
+																<a href="" class="menu__nesting-link">configuration</a>
+															</li>
+															<li>
+																<a href="" class="menu__nesting-link">analytics</a>
+															</li>
+															<li>
+																<a href="" class="menu__nesting-link">management</a>
+															</li>
+														</ul>
+													</li>
+													<li class="style-block">
+														<a href="" class="menu__nesting-link link-style">Additional</a>
+														<ul>
+															<li>
+																<a href="" class="menu__nesting-link">game aggregation</a>
+															</li>
+															<li>
+																<a href="" class="menu__nesting-link">tech support & updates</a>
+															</li>
+															<li>
+																<a href="" class="menu__nesting-link">blockchain & web 3.0</a>
+															</li>
+															<li>
+																<a href="" class="menu__nesting-link">crypto payment systems</a>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</ul>
+										</li>
+										<li class="menu__item">
+											<a href="" class="menu__link">Benefits</a>
+										</li>
+										<li class="menu__item">
+											<a href="" class="menu__link">NEWS & EVENTS</a>
+										</li>
+										<li class="menu__item">
+											<a href="" class="menu__link">contacts</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+							<a data-fls-dynamic=".menu__list, 991.98" href="#" class="block-header-button">
+								<div class="block-header-button__text">
+									<span>JOIN US</span>
+									<span class="--icon-Right-Arrow-4"></span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main class="page page--home">
+				<section class="page--hero hero">
+					<div class="border-color"></div>
+					<div class="hero__block block-hero">
+						<div class="block-hero__items">
+							<div class="block-hero__item">
+								<h1>
+									TECH THAT PERFORMS,
+									<br>
+									<span>PARTNERSHIPS</span>
+									THAT WIN!
+								</h1>
+							</div>
+							<div class="block-hero__item">
+								<p>
+									ALL-IN-ONE AND WHITE-LABEL ONLINE CASINO SOLUTIONS — PARTNERING FOR
+            SUCCESS!
+								</p>
+							</div>
+							<div class="block-hero__cubs-mob">
+								<img src="./assets/img/cubs-mob.svg" alt="">
+							</div>
+							<div class="block-hero__item">
+								<a href="#" class="block-hero__bubutton-img --icon-arrow"></a>
+								<a href="#" class="block-hero__bubutton-def">send a request</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="get-your">
+					<div class="get-your__block">
+						<div class="get-your__items">
+							<div class="get-your__item item-btn">
+								<a href="#" class="get-your__button">
+									<div class="get-your__img-btn --icon-button-on"></div>
+								</a>
+							</div>
+							<div class="get-your__item item-text">
+								<h2>
+									Get your Online Casino, Live in
+									<span>3-5 Weeks!</span>
+								</h2>
+								<p>
+									SpinRee is more than just a platform — it's a comprehensive solution
+            tailored to meet the full spectrum of iGaming business needs.
+								</p>
+							</div>
+							<div class="get-your__item item-team">
+								<div class="item-team-color">
+									<div class="item-team__block">
+										<div class="item-team__items">
+											<div class="item-team__title">YOUR GO-TO IGAMING TEAM</div>
+											<div class="item-team__text">From start to finish, we handle absolutely EVERYTHING.</div>
+										</div>
+										<a href="#" class="item-team__button">
+											<span>about us</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="get-your__interface interface">
+								<h3 class="interface__title">
+									Creating an inviting
+									<span>interface</span>
+								</h3>
+								<p>
+									Games and Games Aggregation, Payments, CRM, Whitelabel and Turnkey
+            Solutions, Blockchain & Web 3.0 Development.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="spinree-core">
+					<div class="border-color-2"></div>
+					<div class="spinree-core__block block-spinree">
+						<div class="block-spinree__items">
+							<div class="block-spinree__item item-block">
+								<div class="item-block__title">Payments</div>
+								<div class="item-block__images">
+									<picture>
+										<img alt="mastercard" src="./assets/img/spinree-core/mastercard.webp">
+									</picture>
+									<picture>
+										<img alt="visa" src="./assets/img/spinree-core/visa.webp">
+									</picture>
+									<picture>
+										<img alt="upi" src="./assets/img/spinree-core/upi.webp">
+									</picture>
+									<picture>
+										<img alt="pix" src="./assets/img/spinree-core/pix.webp">
+									</picture>
+								</div>
+								<div class="item-block__text">and more</div>
+							</div>
+							<div class="block-spinree__item item-block">
+								<div class="item-block__title">Games</div>
+								<div class="item-block__sutitle">+10,000 games</div>
+								<div class="item-block__subtext">Sportsbook & Virtual Sports</div>
+								<div class="item-block__subimages">
+									<picture>
+										<img alt="mastercard" src="./assets/img/spinree-core/1.webp">
+									</picture>
+									<picture>
+										<img alt="visa" src="./assets/img/spinree-core/4.webp">
+									</picture>
+									<picture>
+										<img alt="upi" src="./assets/img/spinree-core/3.webp">
+									</picture>
+									<picture>
+										<img alt="pix" src="./assets/img/spinree-core/2.webp">
+									</picture>
+								</div>
+							</div>
+						</div>
+						<div class="block-spinree__items displey-non">
+							<div class="block-spinree block-spinree__item--specific">
+								<div class="block-spinree--decor">
+									<div class="block-spinree__title">
+										Spinree
+										<span class="block-spinree__title-accent">core</span>
+									</div>
+								</div>
+								<div class="block-spinree__content">
+									<div class="block-spinree__images">
+										<picture>
+											<img alt="" src="./assets/img/spinree-core/fraction.webp">
+										</picture>
+									</div>
+									<div class="block-spinree__text">
+										Segmentation
+										<span>Real-time</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="block-spinree__items">
+							<div class="block-spinree__item item-block">
+								<div class="item-block__title">CRM</div>
+								<div class="item-block__sub-items">
+									<div class="item-block__sub-text">Bonuses</div>
+									<div class="item-block__sub-text">Tournaments</div>
+									<div class="item-block__sub-text">Communication</div>
+								</div>
+							</div>
+							<div class="block-spinree__item item-block">
+								<div class="item-block__title">Backoffice</div>
+								<div class="item-block__sub-items">
+									<div class="item-block__sub-text">Configuration</div>
+									<div class="item-block__sub-text">Analytics</div>
+									<div class="item-block__sub-text">Managment</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="choose-us container-980">
+					<div class="choose-us__title">
+						<h3>Why choose us?</h3>
+					</div>
+					<div class="choose-us__block">
+						<div class="choose-us__items">
+							<div class="choose-us__item">
+								<span>INNOVATION</span>
+							</div>
+							<div class="choose-us__item">
+								<span>RELIABILITY</span>
+							</div>
+						</div>
+						<div class="choose-us__items">
+							<div class="choose-us__item">
+								<span>SCAPABILITY</span>
+							</div>
+							<div class="choose-us__item">
+								<span>HIGH PERFORMANCE</span>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="news">
+					<div class="news__block container-980">
+						<div class="news__title">
+							<h3>lates NEWS & EVENTS</h3>
+							<span>Book the meeting with us</span>
+						</div>
+						<div class="news__items">
+							<!-- Оболонка слайдера -->
+							<div class="news swiper displey-non-slid" data-fls-slider="">
+								<!-- Частина слайдера, що рухається -->
+								<div class="news__wrapper swiper-wrapper">
+									<!-- Слайд -->
+									<div class="news__slide swiper-slide">
+										<div class="news-item">
+											<div class="news-item__img">
+												<picture>
+													<img alt="news" src="./assets/img/news/news-1.webp">
+												</picture>
+											</div>
+											<div class="news-item__title">
+												<p>igb live</p>
+												<p>london</p>
+											</div>
+											<div class="news-item__data">July 1-4, 2025</div>
+											<a href="#" class="news-item__subtitle">book the meeting</a>
+										</div>
+										<div class="news-item">
+											<div class="news-item__img">
+												<picture>
+													<img alt="news" src="./assets/img/news/news-2.webp">
+												</picture>
+											</div>
+											<div class="news-item__title">SiGMA Euro-Med Malta</div>
+											<div class="news-item__data">September 1-4, 2025</div>
+											<a href="#" class="news-item__subtitle">book the meeting</a>
+										</div>
+										<div class="news-item">
+											<div class="news-item__img">
+												<picture>
+													<img alt="news" src="./assets/img/news/news-3.webp">
+												</picture>
+											</div>
+											<div class="news-item__title">affiliate world europe</div>
+											<div class="news-item__data">September 4-5, 2025</div>
+											<a href="#" class="news-item__subtitle">book the meeting</a>
+										</div>
+									</div>
+									<div class="news__slide swiper-slide">
+										<div class="news-item">
+											<div class="news-item__img">
+												<picture>
+													<img alt="news" src="./assets/img/news/news-1.webp">
+												</picture>
+											</div>
+											<div class="news-item__title">
+												<p>igb live</p>
+												<p>london</p>
+											</div>
+											<div class="news-item__data">July 1-4, 2025</div>
+											<a href="#" class="news-item__subtitle">book the meeting</a>
+										</div>
+										<div class="news-item">
+											<div class="news-item__img">
+												<picture>
+													<img alt="news" src="./assets/img/news/news-2.webp">
+												</picture>
+											</div>
+											<div class="news-item__title">SiGMA Euro-Med Malta</div>
+											<div class="news-item__data">September 1-4, 2025</div>
+											<a href="#" class="news-item__subtitle">book the meeting</a>
+										</div>
+										<div class="news-item">
+											<div class="news-item__img">
+												<picture>
+													<img alt="news" src="./assets/img/news/news-3.webp">
+												</picture>
+											</div>
+											<div class="news-item__title">affiliate world europe</div>
+											<div class="news-item__data">September 4-5, 2025</div>
+											<a href="#" class="news-item__subtitle">book the meeting</a>
+										</div>
+									</div>
+								</div>
+								<!-- Якщо потрібна пагінація -->
+								<div class="swiper-pagination"></div>
+							</div>
+							<!-- Оболонка слайдера -->
+							<div class="news swiper displey-on-mob" data-fls-slider="">
+								<!-- Частина слайдера, що рухається -->
+								<div class="news__wrapper swiper-wrapper">
+									<!-- Слайд -->
+									<div class="news__slide swiper-slide">
+										<div class="news-item">
+											<div class="news-item__img">
+												<picture>
+													<img alt="news" src="./assets/img/news/news-1.webp">
+												</picture>
+											</div>
+											<div class="news-item__title">
+												<p>igb live</p>
+												<p>london</p>
+											</div>
+											<div class="news-item__data">July 1-4, 2025</div>
+											<a href="#" class="news-item__subtitle">book the meeting</a>
+										</div>
+									</div>
+									<div class="news__slide swiper-slide">
+										<div class="news-item">
+											<div class="news-item__img">
+												<picture>
+													<img alt="news" src="./assets/img/news/news-2.webp">
+												</picture>
+											</div>
+											<div class="news-item__title">SiGMA Euro-Med Malta</div>
+											<div class="news-item__data">September 1-4, 2025</div>
+											<a href="#" class="news-item__subtitle">book the meeting</a>
+										</div>
+									</div>
+									<div class="news__slide swiper-slide">
+										<div class="news-item">
+											<div class="news-item__img">
+												<picture>
+													<img alt="news" src="./assets/img/news/news-3.webp">
+												</picture>
+											</div>
+											<div class="news-item__title">affiliate world europe</div>
+											<div class="news-item__data">September 4-5, 2025</div>
+											<a href="#" class="news-item__subtitle">book the meeting</a>
+										</div>
+									</div>
+								</div>
+								<!-- Якщо потрібна пагінація -->
+								<div class="swiper-pagination"></div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="solution">
+					<div class="border-color-3"></div>
+					<div class="solution__block container-980">
+						<div class="solution__title">
+							<h3>
+								LET'S FIND
+								<br>
+								<span>THE BEST</span>
+								SOLUTION FOR YOU
+							</h3>
+							<p>Contact us anytime — we handle each partnership individually.</p>
+						</div>
+						<div class="solution__items">
+							<div class="solution__item">
+								<form action="files/sendmail/sendmail.php" method="POST">
+									<div class="input-wrapper">
+										<input type="text" name="name" data-error="Error" placeholder="Name" class="input">
+									</div>
+									<div class="input-wrapper">
+										<input type="text" name="form[email]" data-error="Error" placeholder="E-mail" class="input">
+									</div>
+									<div class="input-wrapper">
+										<input type="message" name="message" data-error="Error" placeholder="message" class="input">
+									</div>
+									<div class="cubcheckbox">
+										<input id="c_1" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+										<label for="c_1" class="checkbox__label">
+											<span class="checkbox__text">
+												I understand that my personal data will be processed in
+                  accordance with the PikeBit
+											</span>
+										</label>
+									</div>
+									<div class="cubcheckbox__button">
+										<button type="submit" class="button">submit request</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer data-fls-footer="" class="footer">
+				<div class="footer container-980">
+					<div class="footer__block">
+						<div class="footer__menu menu-footer">
+							<div class="menu-footer__items">
+								<div class="menu-footer__item">
+									<ul>
+										<li>
+											<a href="#">About us</a>
+										</li>
+										<li>
+											<a href="#">Solutions</a>
+										</li>
+										<li>
+											<a href="#">Benefits</a>
+										</li>
+										<li>
+											<a href="#">NEWS & EVENTS</a>
+										</li>
+										<li>
+											<a href="#">contacts</a>
+										</li>
+									</ul>
+								</div>
+								<div class="menu-footer__icon">
+									<a href="#" class="menu-footer__link --icon-facebook"></a>
+									<a href="#" class="menu-footer__link --icon-instagram"></a>
+									<a href="#" class="menu-footer__link --icon-telegram"></a>
+									<a href="#" class="menu-footer__link --icon-linkedin"></a>
+									<a href="#" class="menu-footer__link --icon-whatsapp"></a>
+								</div>
+							</div>
+							<div class="menu-footer__politic">
+								<a href="#">Copyright © 2025 Spinree.com</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
 </html>
